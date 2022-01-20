@@ -7,5 +7,5 @@ import { SemanticTokensResponse } from './SemanticTokensResponse';
 
 export class ProvideSemanticTokensResponse {
     // tslint:disable-next-line: variable-name
-    constructor(public Result: SemanticTokensResponse, public HostDocumentSyncVersion: number | null) {}
+    constructor(public Result: SemanticTokensResponse, public IsFinalized: boolean, public HostDocumentSyncVersion: number | null) {}
 }

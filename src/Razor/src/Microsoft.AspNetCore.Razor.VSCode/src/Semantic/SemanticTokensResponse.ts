@@ -6,6 +6,7 @@
 export class SemanticTokensResponse {
     constructor(
         public readonly data: Array<number>,
+        public readonly isFinalized: boolean,
         public readonly resultId?: string) {
     }
 }
